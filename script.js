@@ -1,4 +1,16 @@
-"use string";
+"use strict";
+
+const nbr = [0,2,3];
+nbr.pop()
+nbr.push(4);
+for (let i = 0; i < nbr.length; ++i) {
+    console.log(nbr[i]);
+}
+nbr.forEach(i => console.log(i));
+const a = nbr.map(i => i + 1); //замена значений массива где i текущее значение
+
+// nbr.fill(1);
+console.log(a);
 
 const zeroBtn = document.querySelector('#zero');
 const oneBtn = document.querySelector('#one');
@@ -180,7 +192,7 @@ equal.addEventListener('click', function() {
 
     first = res;
     second = 0;
-})
+});
 
 
 
@@ -211,3 +223,24 @@ equal.addEventListener('click', function() {
     
 //     showResult();
 // }); 
+
+
+// const nbr = [0,2,3];
+// const a = nbr[0];
+// const b = nbr[1];
+// const c = nbr[2];
+// nbr.pop()
+// nbr.push(4);
+// console.log(nbr);
+
+
+
+// let a = 3;
+// const b = a++;
+// const c = ++a;
+// console.log(a, b, c);
+
+
+// for (let i = 0; i < 10; ++i) {
+//     console.log(i);
+// }
